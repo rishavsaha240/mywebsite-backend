@@ -12,4 +12,9 @@ router.get("/education-details", async (req, res) => {
   }
 });
 
+router.post("/submit-contact-form-details", async (req, res) => {
+  console.log(req.body);
+  res.send(req.body);
+});
+
 module.exports = router;
